@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="705.0" stylesheets="@PetScreen.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PetScreen">
+    <children>
+        <SplitPane dividerPositions="0.7752489331436699" layoutX="234.0" layoutY="98.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane fx:id="mainAnchor" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="475.0">
+                    <children>
+                  <BorderPane layoutX="18.0" layoutY="10.0" prefHeight="458.0" prefWidth="527.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <left>
+                        <Group translateY="-105.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label fx:id="coinsNum" contentDisplay="CENTER" layoutX="-18.0" layoutY="1.0" prefHeight="24.0" prefWidth="94.0" text="Coins" />
+                              <ImageView fitHeight="33.0" fitWidth="44.0" layoutX="44.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                                 <image>
+                                    <Image url="@../../../../images/Coin.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                     </left>
+                  </BorderPane>
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="441.0" prefWidth="545.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <GridPane prefHeight="88.0" prefWidth="530.0" translateY="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="109.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="342.0" prefWidth="433.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Group GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                                 <children>
+                                    <ProgressBar fx:id="hungerProgress1" maxWidth="-Infinity" prefHeight="25.0" prefWidth="415.0" progress="0.0" stylesheets="@PetScreen.css" />
+                                    <Label fx:id="hungerNum" alignment="CENTER_RIGHT" maxWidth="-Infinity" prefHeight="25.0" prefWidth="408.0" text="\%" textAlignment="RIGHT" />
+                                 </children>
+                              </Group>
+                              <Group GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <ProgressBar fx:id="happinessProgress1" maxWidth="-Infinity" prefHeight="25.0" prefWidth="415.0" progress="0.0" />
+                                    <Label fx:id="happinessNum" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="408.0" text="\%" />
+                                 </children>
+                              </Group>
+                              <Group GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <ProgressBar fx:id="cleanlinessProgress1" maxWidth="-Infinity" prefHeight="25.0" prefWidth="415.0" progress="0.0" />
+                                    <Label fx:id="cleanlinessNum" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="408.0" text="\%" />
+                                 </children>
+                              </Group>
+                           </children>
+                        </GridPane>
+                     </top>
+                  </BorderPane>
+                  <ImageView fx:id="backgroundImg" fitHeight="458.0" fitWidth="542.0" pickOnBounds="true" preserveRatio="true" />
+                  <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="458.0" prefWidth="545.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <GridPane prefHeight="88.0" prefWidth="521.0" translateY="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="109.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="342.0" prefWidth="433.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </top>
+                  </BorderPane>
+                        <BorderPane AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <center>
+                        <GridPane prefHeight="300.0" prefWidth="545.0" BorderPane.alignment="BOTTOM_CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="321.0" minHeight="10.0" prefHeight="282.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                                      <ImageView fx:id="petImg" fitHeight="272.0" fitWidth="267.0" pickOnBounds="true" preserveRatio="true" translateY="-10.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                          <image>
+                                              <Image url="@../../../../images/Penguin.png" />
+                                          </image>
+                                      </ImageView>
+                              <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="79.0" prefWidth="545.0" textAlignment="CENTER" translateX="-5.0" translateY="10.0" GridPane.valignment="BOTTOM" />
+                           </children>
+                        </GridPane>
+                            </center>
+                     <top>
+                        <GridPane prefHeight="88.0" prefWidth="542.0" translateY="5.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="64.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="342.0" prefWidth="481.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ProgressBar fx:id="hungerProgress" maxWidth="-Infinity" prefHeight="25.0" prefWidth="370.0" progress="0.0" stylesheets="@PetScreen.css" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER" />
+                              <ProgressBar fx:id="happinessProgress" maxWidth="-Infinity" prefHeight="25.0" prefWidth="370.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <ProgressBar fx:id="cleanlinessProgress" maxWidth="-Infinity" prefHeight="25.0" prefWidth="370.0" progress="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Hunger.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Happy.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                                 <image>
+                                    <Image url="@../../../../images/Cleanliness.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </top>
+                     <bottom>
+                        <HBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#startStartScreen" prefHeight="26.0" prefWidth="128.0" text="Main Menu" />
+                              <Button fx:id="earnButton" mnemonicParsing="false" onAction="#startMinigame" prefHeight="38.0" prefWidth="132.0" text="Play Minigame">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="cleanButton" mnemonicParsing="false" onAction="#startBathroomScreen" prefHeight="38.0" prefWidth="132.0" text="Clean">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </bottom>
+                        </BorderPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background" stylesheets="@PetScreen.css">
+                    <children>
+                        <GridPane layoutX="-41.0" layoutY="163.0" prefHeight="398.0" prefWidth="159.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <BorderPane prefHeight="98.0" prefWidth="116.0">
+                                    <bottom>
+                                        <Button fx:id="cookieFood" maxHeight="34.0" mnemonicParsing="false" onAction="#detectFood" prefHeight="34.0" prefWidth="135.0" stylesheets="@PetScreen.css" text="Cookie (50 Coins)" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="Arial" size="12.0" />
+                                 </font></Button>
+                                    </bottom>
+                                    <center>
+                                        <ImageView fx:id="cookieImg" fitHeight="71.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Cookie.png" />
+                                 </image></ImageView>
+                                    </center>
+                                </BorderPane>
+                                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                    <bottom>
+                                        <Button fx:id="cheeseFood" mnemonicParsing="false" onAction="#detectFood" prefHeight="25.0" prefWidth="135.0" text="Cheese (100 Coins)" BorderPane.alignment="CENTER" />
+                                    </bottom>
+                                    <center>
+                                        <ImageView fx:id="cheeseImg" fitHeight="68.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Cheese.png" />
+                                 </image></ImageView>
+                                    </center>
+                                </BorderPane>
+                                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                    <bottom>
+                                        <Button fx:id="pizzaFood" mnemonicParsing="false" onAction="#detectFood" prefHeight="25.0" prefWidth="135.0" text="Pizza (150 Coins)" BorderPane.alignment="CENTER" />
+                                    </bottom>
+                                    <center>
+                                        <ImageView fx:id="PizzaImg" fitHeight="67.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Pizza.png" />
+                                 </image></ImageView>
+                                    </center>
+                                </BorderPane>
+                                <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                                    <bottom>
+                                        <Button fx:id="eggFood" mnemonicParsing="false" onAction="#detectFood" prefHeight="25.0" prefWidth="135.0" text="Egg (1 Coin)" BorderPane.alignment="CENTER" />
+                                    </bottom>
+                                    <center>
+                                        <ImageView fx:id="EggImg" fitHeight="72.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../../../../images/Egg.png" />
+                                 </image></ImageView>
+                                    </center>
+                                </BorderPane>
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

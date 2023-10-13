@@ -1,0 +1,91 @@
+.background {
+    -fx-background-color: #F5E3E6;
+}
+
+.label {
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+.button {
+
+    -fx-background-color: #f092b6;
+    -fx-background-radius: 10;
+    -fx-text-fill: #fffeff;
+    -fx-min-height: 26.0;
+    -fx-max-height: 26.0;
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-effect: dropshadow(gaussian, #fffeff, 1, 1, 0, 0);
+}
+
+#hungerNum, #cleanlinessNum, #happinessNum {
+    -fx-text-fill: #7b684b;
+
+}
+
+#exitButton {
+    -fx-background-color: #fd7c7f;
+}
+
+#startGame {
+    -fx-background-color: #9cc14f;
+}
+
+#bathroomTopAnchor{
+    -fx-background-color: #a1d3ec;
+}
+
+#bathroomBottomAnchor{
+    -fx-background-color: #edf4fc;
+    -fx-font-size: 20px;
+}
+
+.textLabels{
+    -fx-font-size: 15px;
+    -fx-text-fill: #74604d;
+}
+
+.custom-progress .track {
+    -fx-background-color: #c9c4d4;
+}
+
+#earnButton , #cleanButton {
+    -fx-background-color: #839ed2;
+    -fx-background-radius: 10;
+    -fx-min-height: 26.0;
+    -fx-max-height: 26.0;
+    -fx-text-fill: #fffeff;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+.split-pane-divider {
+    -fx-padding: 0;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, #7b684b, 2, 2, 0, 0);
+}
+
+.progress-bar {
+   -fx-accent: #9cc14f;
+
+}
+
+#hungerProgress1 .track{
+    -fx-background-color: #dceaf1;
+}
+
+#message{
+    -fx-font-size: 16px;
+}
+
+#coinsNum{
+    -fx-font-size: 16px;
+}
+
+.progress-bar .bar {
+    -fx-background-radius: 50;
+}
+
+.progress-bar .track {
+    -fx-background-color: #dceaf1;
+    -fx-background-radius: 50;
+}
