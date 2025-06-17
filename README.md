@@ -13,10 +13,10 @@ Demo: https://youtu.be/yafeLcWID8E
 ![image alt](https://github.com/bernicetan28/Sumikko-Gurashi-Virtual-Pet-Game/blob/5b82d6a26d8109c68394c0a21ba6b3897aecbab1/Screenshot%202025-06-17%20142528.png)
 
 ## Features
--🐧 Virtual Pet Care: Manage the needs of Penguin by monitoring hunger, cleanliness, and happiness levels.
--🍽️ Feeding System: Purchase and feed different types of food, each affecting the pet's stats.
--🎮 Minigame for Coins: Earn coins by playing a fun, "Whack-A-Mole"-style minigame, used to buy food.
--🧼 Status Tracking: Real-time display of the pet’s condition to help players make informed decisions.
+- 🐧 Virtual Pet Care: Manage the needs of Penguin by monitoring hunger, cleanliness, and happiness levels.
+- 🍽️ Feeding System: Purchase and feed different types of food, each affecting the pet's stats.
+- 🎮 Minigame for Coins: Earn coins by playing a fun, "Whack-A-Mole"-style minigame, used to buy food.
+- 🧼 Status Tracking: Real-time display of the pet’s condition to help players make informed decisions.
 
 ## Technology
 Made with Scala. Combines object-oriented and functional programming paradigms. For the user interface, the game utilizes ScalaFX. 
